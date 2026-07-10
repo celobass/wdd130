@@ -1,0 +1,73 @@
+/* Estilo geral da página */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+/* Imagem */
+img {
+    display: block;
+    width: 100%;
+    border: 15px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    margin: auto;
+}
+
+/* Seções cinzas */
+section {
+    background-color: #d9d9d9;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+/* Títulos das seções */
+section h2 {
+    font-size: 2em;
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Lista */
+ul {
+    line-height: 2;
+}
+
+/* Links */
+a {
+    color: blue;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
