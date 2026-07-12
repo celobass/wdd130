@@ -9,12 +9,16 @@ nav a {
     padding: 20px;
 }
 
-h1 {
-    color: darkblue;
-
+main {
+    max-width: 840px;
 }
 
-img {
+h1 {
+    color: darkblue;
+}
+
+/* Imagem do perfil */
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
@@ -22,6 +26,33 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
+/* Remove o padding do parágrafo */
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+/* Estilo da barra lateral */
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 20%);
+    padding: 1rem;
+    background-color: #eeeeee;
+    color: #333333;
+}
+
+/* Imagem do estado */
+aside img {
+    width: 200px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
 }
