@@ -1,29 +1,46 @@
+:root {
+    --cor-primaria: darkblue;
+    --cor-texto-claro: white;
+    --cor-texto: #333333;
+    --cor-fundo-aside: #eeeeee;
+    --cor-borda: black;
+    --cor-sombra: gray;
+
+    --espacamento-pequeno: 2px;
+    --espacamento-medio: 10px;
+    --espacamento-grande: 20px;
+
+    --largura-main: 840px;
+    --largura-imagem: 150px;
+    --largura-imagem-aside: 200px;
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--cor-primaria);
+    padding: var(--espacamento-medio);
 }
 
 nav a {
-    color: white;
+    color: var(--cor-texto-claro);
     display: block;
-    padding: 20px;
+    padding: var(--espacamento-grande);
 }
 
 main {
-    max-width: 840px;
+    max-width: var(--largura-main);
 }
 
 h1 {
-    color: darkblue;
+    color: var(--cor-primaria);
 }
 
 /* Imagem do perfil */
 main img {
-    width: 150px;
+    width: var(--largura-imagem);
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: 1px solid var(--cor-borda);
+    padding: var(--espacamento-pequeno);
+    box-shadow: 0 0 30px var(--cor-sombra);
 }
 
 /* Remove o padding do parágrafo */
@@ -37,17 +54,17 @@ aside {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 20%);
     padding: 1rem;
-    background-color: #eeeeee;
-    color: #333333;
+    background-color: var(--cor-fundo-aside);
+    color: var(--cor-texto);
 }
 
 /* Imagem do estado */
 aside img {
-    width: 200px;
+    width: var(--largura-imagem-aside);
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: 1px solid var(--cor-borda);
+    padding: var(--espacamento-pequeno);
+    box-shadow: 0 0 30px var(--cor-sombra);
 }
 
 /* Rodapé */
