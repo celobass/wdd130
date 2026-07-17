@@ -1,3 +1,10 @@
+/* Resetar CSS do meu Projeto*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --cor-primaria: darkblue;
     --cor-texto-claro: white;
@@ -41,6 +48,8 @@ main img {
     border: 1px solid var(--cor-borda);
     padding: var(--espacamento-pequeno);
     box-shadow: 0 0 30px var(--cor-sombra);
+    float: right;
+    margin: 15px;
 }
 
 /* Remove o padding do parágrafo */
@@ -51,11 +60,8 @@ p {
 /* Estilo da barra lateral */
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 20%);
-    padding: 1rem;
-    background-color: var(--cor-fundo-aside);
     color: var(--cor-texto);
+    position: relative;
 }
 
 /* Imagem do estado */
@@ -67,9 +73,26 @@ aside img {
     box-shadow: 0 0 30px var(--cor-sombra);
 }
 
+aside h2 {
+    position: absolute;
+    top: 100px;
+}
+
 /* Rodapé */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/*Seletores de Classe*/
+.caixa {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 20%);
+    padding: 1rem;
+    background-color: var(--cor-fundo-aside);
+}
+
+.identacao {
+    padding-left: 2rem;
 }
