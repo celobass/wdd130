@@ -1,0 +1,188 @@
+:root {
+    --cor-primaria: #023047;
+    --cor-secundaria: #219ebc;
+    --cor-destaque1: #14213d;
+    --cor-destaque2: #ffb703;
+    --cor-clara: #f8f9fa;
+
+    --fonte-titulo: "Montserrat", sans-serif;
+    --fonte-body: "Roboto", sans-serif;
+}
+
+/* Redefinição do box model */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+
+body {
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+    background-color: var(--cor-clara);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Cabeçalho */
+
+header {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--cor-secundaria);
+}
+
+header > img {
+    width: 130px;
+    height: auto;
+    margin: 15px auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a {
+    padding: 12px;
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: var(--cor-destaque2);
+}
+
+/* Imagem hero */
+
+.hero {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    background-color: rgb(2 48 71 / 80%);
+    color: white;
+}
+
+/* Caixa sobreposta à imagem hero */
+
+.hero article {
+    position: absolute;
+    top: 130px;
+    left: 30px;
+    right: 30px;
+    padding: 20px;
+    background-color: rgb(255 255 255 / 85%);
+    color: var(--cor-destaque1);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin-left: 20px;
+    border: 2px solid var(--cor-primaria);
+}
+
+.hero article p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Seções */
+
+.historia {
+    min-height: 200px;
+    border: 1px solid var(--cor-secundaria);
+    background-color: white;
+}
+
+.historia h2,
+.aventura h2 {
+    margin-bottom: 15px;
+}
+
+.historia p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.aventura {
+    min-height: 180px;
+    border: 1px solid var(--cor-secundaria);
+    background-color: white;
+}
+
+/* Rodapé */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+footer p {
+    flex: 1;
+    text-align: center;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+}
+
+.redes-sociais img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
