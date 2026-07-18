@@ -5,8 +5,8 @@
     --cor-destaque2: #ffb703;
     --cor-clara: #f8f9fa;
 
-    --fonte-titulo: "Montserrat", sans-serif;
-    --fonte-body: "Roboto", sans-serif;
+    --fonte-titulo: Georgia, "Times New Roman", serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
 }
 
 /* Redefinição do box model */
