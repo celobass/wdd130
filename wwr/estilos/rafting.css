@@ -1,3 +1,16 @@
+:root {
+    --cor-texto: #222;
+    --cor-cabecalho: #b6b6b6;
+    --cor-borda: #555;
+    --cor-branca: #ffffff;
+    --cor-hover: #e2e2e2;
+    --cor-historia: #e1e1e1;
+    --cor-hero-titulo: rgb(255 255 255 / 75%);
+    --cor-hero-artigo: rgb(255 255 255 / 85%);
+
+    --fonte-principal: Arial, Helvetica, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +20,8 @@
 body {
     max-width: 1200px;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
 }
 
 /* Cabeçalho */
@@ -22,7 +35,7 @@ header {
     margin: 20px 0;
     padding: 15px 40px;
 
-    background-color: #b6b6b6;
+    background-color: var(--cor-cabecalho);
 }
 
 header img {
@@ -38,16 +51,16 @@ header nav {
 
 header nav a {
     padding: 15px 28px;
-    border: 1px solid #555;
+    border: 1px solid var(--cor-borda);
 
-    background-color: white;
-    color: #222;
+    background-color: var(--cor-branca);
+    color: var(--cor-texto);
 
     text-decoration: none;
 }
 
 header nav a:hover {
-    background-color: #e2e2e2;
+    background-color: var(--cor-hover);
 }
 
 /* Imagem principal */
@@ -71,7 +84,7 @@ header nav a:hover {
 
     padding: 12px;
 
-    background-color: rgb(255 255 255 / 75%);
+    background-color: var(--cor-hero-titulo);
     text-align: center;
 }
 
@@ -83,7 +96,7 @@ header nav a:hover {
     width: 90%;
     padding: 25px;
 
-    background-color: rgb(255 255 255 / 85%);
+    background-color: var(--cor-hero-artigo);
 }
 
 .hero article img {
@@ -113,7 +126,7 @@ header nav a:hover {
     margin-bottom: 30px;
     padding: 25px;
 
-    background-color: #e1e1e1;
+    background-color: var(--cor-historia);
 }
 
 .historia h2 {
@@ -137,7 +150,7 @@ header nav a:hover {
     margin-bottom: 30px;
     padding: 25px;
 
-    border: 1px solid #555;
+    border: 1px solid var(--cor-borda);
 }
 
 .aventuras h2 {
@@ -159,7 +172,6 @@ header nav a:hover {
 .galeria-aventuras img {
     width: 100%;
     height: 130px;
-
     object-fit: cover;
 }
 
@@ -177,7 +189,7 @@ footer {
 
     padding: 30px 40px;
 
-    background-color: #b6b6b6;
+    background-color: var(--cor-cabecalho);
 }
 
 footer p {
@@ -185,16 +197,16 @@ footer p {
     text-align: center;
 }
 
-.redes-sociais {
+.socialmedia {
     display: flex;
     gap: 15px;
 }
 
-.redes-sociais a {
+.socialmedia a {
     text-decoration: none;
 }
 
-.redes-sociais img {
+.socialmedia img {
     width: 45px;
     height: 45px;
 }
