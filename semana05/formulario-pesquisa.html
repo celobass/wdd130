@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+      content="Formulário de pesquisa desenvolvido para a semana 05 do curso WDD 130.">
+
+    <meta name="author" content="Marcelo Alves de Lima">
+
+    <title>Formulário de Pesquisa | WDD 130</title>
+
+    <link rel="stylesheet" href="estilos/formulario-pesquisa.css">
+</head>
+
+<body>
+    <header>
+        <h1>Formulário de Pesquisa</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Informações pessoais</legend>
+
+                <div class="item-formulario coluna2">
+                    <label for="nome-completo">Nome completo:</label>
+
+                    <input type="text" id="nome-completo" name="nome-completo" required>
+                </div>
+
+                <div class="item-formulario coluna2">
+                    <label for="emaildousuario">E-mail:</label>
+
+                    <input type="email" id="emaildousuario" name="emaildousuario" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pesquisa</legend>
+
+                <div class="item-formulario coluna1">
+                    <label for="navegador">
+                        Qual é o seu navegador favorito?
+                    </label>
+
+                    <select id="navegador" name="navegador">
+                        <option value="">Selecione</option>
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="safari">Safari</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="item-formulario coluna1">
+                    <label for="pet">
+                        Você tem um bichinho de estimação em casa?
+                    </label>
+
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+
+                <div class="item-formulario">
+                    <label for="feedback">
+                        Liste os lugares onde você morou:
+                    </label>
+
+                    <textarea id="feedback" name="feedback" rows="5"
+                      placeholder="Exemplo: Ponta Grossa, Curitiba, São Paulo..."></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit">Enviar Pesquisa</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Marcelo Alves de Lima | WDD 130</p>
+    </footer>
+</body>
+
+</html>

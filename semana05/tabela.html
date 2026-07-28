@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Exercício de criação e estilização de tabelas HTML.">
+
+    <meta name="author" content="Marcelo Alves de Lima">
+
+    <title>Exercício de Tabela | WDD 130</title>
+
+    <link rel="stylesheet" href="estilos/tabela.css">
+</head>
+
+<body>
+    <main>
+        <h1>Exercício de Tabela</h1>
+
+        <table>
+            <caption>Desempenho das equipes por liga</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Liga</th>
+                    <th scope="col">Equipe</th>
+                    <th scope="col">Registro</th>
+                    <th scope="col">Número de jogadores</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Sul</th>
+                    <td>Paraná</td>
+                    <td>52-19</td>
+                    <td>23</td>
+                </tr>
+
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td>49-24</td>
+                    <td>10</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Oeste</th>
+                    <td>Lacerda</td>
+                    <td>92-70</td>
+                    <td>27</td>
+                </tr>
+
+                <tr>
+                    <td>Acre</td>
+                    <td>75-87</td>
+                    <td>20</td>
+                </tr>
+
+                <tr>
+                    <td>Rondônia</td>
+                    <td>10-7</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="3" scope="row">Total de jogadores</th>
+                    <td>92</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+
+</html>
