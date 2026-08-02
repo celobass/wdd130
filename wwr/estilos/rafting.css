@@ -210,3 +210,223 @@ footer p {
     width: 45px;
     height: 45px;
 }
+/* Página Fale Conosco */
+
+.contato-introducao {
+    margin-bottom: 30px;
+    padding: 35px;
+
+    background-color: var(--cor-historia);
+    text-align: center;
+}
+
+.contato-introducao h1 {
+    margin-bottom: 15px;
+}
+
+.contato-introducao p {
+    max-width: 750px;
+    margin: 0 auto;
+
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Informações da empresa e mapa */
+
+.contato-empresa {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+
+    margin-bottom: 30px;
+    padding: 25px;
+
+    border: 1px solid var(--cor-borda);
+}
+
+.informacoes-contato,
+.mapa {
+    padding: 20px;
+}
+
+.informacoes-contato h2,
+.mapa h2 {
+    margin-bottom: 20px;
+}
+
+.informacoes-contato address {
+    font-style: normal;
+}
+
+.informacoes-contato p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.informacoes-contato a {
+    color: #004f80;
+}
+
+.informacoes-contato a:hover {
+    text-decoration: none;
+}
+
+.mapa iframe {
+    display: block;
+    width: 100%;
+    height: 350px;
+
+    border: 1px solid var(--cor-borda);
+}
+
+/* Equipe */
+
+.equipe {
+    margin-bottom: 30px;
+    padding: 30px;
+
+    background-color: var(--cor-historia);
+}
+
+.equipe h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.equipe-funcionarios {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.equipe-funcionarios figure {
+    flex: 1;
+    max-width: 280px;
+
+    padding: 15px;
+
+    background-color: var(--cor-branca);
+    text-align: center;
+}
+
+.equipe-funcionarios img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.equipe-funcionarios figcaption {
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+/* Formulário */
+
+.secao-formulario {
+    margin-bottom: 30px;
+    padding: 30px;
+
+    border: 1px solid var(--cor-borda);
+}
+
+.secao-formulario h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.secao-formulario form {
+    display: grid;
+    gap: 20px;
+
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.campo-formulario {
+    display: grid;
+    gap: 8px;
+}
+
+.campo-formulario label,
+fieldset legend {
+    font-weight: bold;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    outline: 3px solid #7fb3d5;
+    border-color: #004f80;
+}
+
+fieldset {
+    padding: 20px;
+
+    border: 1px solid var(--cor-borda);
+}
+
+fieldset legend {
+    padding: 0 8px;
+}
+
+.opcao-radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 12px 0;
+}
+
+.opcao-radio input,
+.opcao-newsletter input {
+    width: 18px;
+    height: 18px;
+}
+
+.opcao-newsletter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.secao-formulario button {
+    justify-self: center;
+
+    padding: 14px 35px;
+    border: 2px solid #003d63;
+    border-radius: 5px;
+
+    background-color: #005c91;
+    color: var(--cor-branca);
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.secao-formulario button:hover {
+    background-color: #003d63;
+}
+
+.secao-formulario button:focus {
+    outline: 3px solid #7fb3d5;
+    outline-offset: 3px;
+}

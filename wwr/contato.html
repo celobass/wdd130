@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+      content="Entre em contato com a Adventure Rafting para esclarecer dúvidas, consultar reservas, enviar sugestões e conhecer nossa equipe.">
+
+    <meta name="author" content="Marcelo Alves de Lima">
+
+    <title>Fale Conosco | Adventure Rafting</title>
+
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo-rafting.png"
+          alt="Logotipo da Adventure Rafting">
+
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contato-introducao">
+            <h1>Fale Conosco</h1>
+
+            <p>
+                Estamos à disposição para responder às suas perguntas,
+                ajudar com reservas e receber sugestões para melhorar
+                ainda mais suas aventuras conosco.
+            </p>
+        </section>
+
+        <section class="contato-empresa">
+            <div class="informacoes-contato">
+                <h2>Informações de contato</h2>
+
+                <address>
+                    <p>
+                        <strong>Endereço:</strong><br>
+                        Rua das Aventuras, 250<br>
+                        Ponta Grossa, Paraná
+                    </p>
+
+                    <p>
+                        <strong>Telefone:</strong><br>
+                        <a href="tel:+554232221234">
+                            (42) 3222-1234
+                        </a>
+                    </p>
+
+                    <p>
+                        <strong>E-mail:</strong><br>
+                        <a href="mailto:contato@adventurerafting.com">
+                            contato@adventurerafting.com
+                        </a>
+                    </p>
+                </address>
+            </div>
+
+            <div class="mapa">
+                <h2>Onde estamos</h2>
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.604417423385!2d-50.165898!3d-25.095000"
+                  width="600"
+                  height="350"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Localização da Adventure Rafting em Ponta Grossa">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="equipe">
+            <h2>Conheça nossa equipe</h2>
+
+            <div class="equipe-funcionarios">
+                <figure>
+                    <img src="imagens/funcionario1.jpg"
+                      alt="Carlos, guia principal da Adventure Rafting">
+
+                    <figcaption>
+                        <strong>Carlos Silva</strong><br>
+                        Guia principal
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="imagens/funcionario2.jpg"
+                      alt="Mariana, responsável pelas reservas">
+
+                    <figcaption>
+                        <strong>Mariana Souza</strong><br>
+                        Coordenadora de reservas
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="imagens/funcionario3.jpg"
+                      alt="Rafael, instrutor de segurança">
+
+                    <figcaption>
+                        <strong>Rafael Oliveira</strong><br>
+                        Instrutor de segurança
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="secao-formulario">
+            <h2>Envie uma mensagem</h2>
+
+            <form action="#" method="post">
+                <div class="campo-formulario">
+                    <label for="nome">Nome completo</label>
+
+                    <input
+                      type="text"
+                      id="nome"
+                      name="nome"
+                      required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">Endereço de e-mail</label>
+
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required>
+                </div>
+
+                <fieldset>
+                    <legend>Qual é a finalidade da mensagem?</legend>
+
+                    <div class="opcao-radio">
+                        <input
+                          type="radio"
+                          id="consulta-geral"
+                          name="finalidade"
+                          value="consulta-geral"
+                          required>
+
+                        <label for="consulta-geral">
+                            Consulta Geral
+                        </label>
+                    </div>
+
+                    <div class="opcao-radio">
+                        <input
+                          type="radio"
+                          id="pergunta-reserva"
+                          name="finalidade"
+                          value="pergunta-reserva">
+
+                        <label for="pergunta-reserva">
+                            Pergunta sobre Reserva
+                        </label>
+                    </div>
+
+                    <div class="opcao-radio">
+                        <input
+                          type="radio"
+                          id="sugestao-site"
+                          name="finalidade"
+                          value="sugestao-site">
+
+                        <label for="sugestao-site">
+                            Sugestão de Site
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="campo-formulario">
+                    <label for="mensagem">Mensagem</label>
+
+                    <textarea
+                      id="mensagem"
+                      name="mensagem"
+                      rows="7"
+                      required></textarea>
+                </div>
+
+                <div class="opcao-newsletter">
+                    <input
+                      type="checkbox"
+                      id="newsletter"
+                      name="newsletter">
+
+                    <label for="newsletter">
+                        Quero receber a newsletter mensal
+                    </label>
+                </div>
+
+                <button type="submit">
+                    Enviar mensagem
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © 2026 Adventure Rafting | Marcelo Alves de Lima
+        </p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="imagens/facebook.svg" alt="Facebook">
+            </a>
+
+            <a href="https://instagram.com">
+                <img src="imagens/instagram.svg" alt="Instagram">
+            </a>
+
+            <a href="https://youtube.com">
+                <img src="imagens/youtube.svg" alt="YouTube">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
