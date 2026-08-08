@@ -444,3 +444,299 @@ footer p {
     width: 45px;
     height: 45px;
 }
+/* Página Inicial */
+
+.inicio-hero {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.inicio-hero > img {
+    display: block;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.inicio-hero-conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 75%;
+    padding: 30px;
+
+    background-color: rgb(255 255 255 / 85%);
+    text-align: center;
+
+    transform: translate(-50%, -50%);
+}
+
+.inicio-hero-conteudo h1 {
+    margin-bottom: 12px;
+    font-size: 2.2rem;
+}
+
+.inicio-hero-conteudo p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.botao-acao {
+    display: inline-block;
+
+    padding: 12px 24px;
+    border: 2px solid #003d63;
+    border-radius: 5px;
+
+    background-color: #005c91;
+    color: var(--cor-branca);
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.botao-acao:hover {
+    background-color: #003d63;
+}
+
+.inicio-apresentacao {
+    margin-bottom: 30px;
+    padding: 25px 60px;
+
+    background-color: var(--cor-historia);
+    text-align: center;
+}
+
+.inicio-apresentacao h2 {
+    margin-bottom: 15px;
+}
+
+.inicio-apresentacao p {
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.inicio-destaques {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+.inicio-destaques article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    border: 1px solid var(--cor-borda);
+    background-color: var(--cor-branca);
+}
+
+.inicio-destaques article img {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.inicio-destaques article div {
+    padding: 22px;
+}
+
+.inicio-destaques h2 {
+    margin-bottom: 12px;
+}
+
+.inicio-destaques p {
+    line-height: 1.5;
+}
+
+.inicio-newsletter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+
+    margin-bottom: 30px;
+    padding: 30px 45px;
+
+    background-color: var(--cor-historia);
+}
+
+.newsletter-texto h2 {
+    margin-bottom: 12px;
+}
+
+.newsletter-texto p {
+    line-height: 1.5;
+}
+
+.inicio-newsletter form {
+    display: grid;
+    gap: 12px;
+}
+
+.campo-newsletter {
+    display: grid;
+    gap: 5px;
+}
+
+.campo-newsletter label {
+    font-weight: bold;
+}
+
+.campo-newsletter input {
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+
+    font-family: var(--fonte-principal);
+    font-size: 0.95rem;
+}
+
+.inicio-newsletter button {
+    padding: 11px 24px;
+
+    border: 2px solid #003d63;
+    border-radius: 5px;
+
+    background-color: #005c91;
+    color: var(--cor-branca);
+
+    font-size: 0.95rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.inicio-newsletter button:hover {
+    background-color: #003d63;
+}
+
+.inicio-chamada {
+    margin-bottom: 30px;
+    padding: 35px;
+
+    border: 1px solid var(--cor-borda);
+    text-align: center;
+}
+
+.inicio-chamada h2 {
+    margin-bottom: 12px;
+}
+
+.inicio-chamada p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+/* Página Passeios */
+
+.passeios-introducao {
+    margin-bottom: 30px;
+    padding: 30px 50px;
+
+    background-color: var(--cor-historia);
+    text-align: center;
+}
+
+.passeios-introducao h1 {
+    margin-bottom: 12px;
+}
+
+.passeios-introducao p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.passeios-destaques {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+.passeio-card {
+    border: 1px solid var(--cor-borda);
+    background-color: var(--cor-branca);
+}
+
+.passeio-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.passeio-card div {
+    padding: 20px;
+}
+
+.passeio-card h2 {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.passeio-card p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.passeios-tabela {
+    margin-bottom: 30px;
+    padding: 25px;
+
+    background-color: var(--cor-historia);
+}
+
+.passeios-tabela h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.passeios-tabela table {
+    width: 100%;
+
+    border-collapse: collapse;
+    background-color: var(--cor-branca);
+}
+
+.passeios-tabela th,
+.passeios-tabela td {
+    padding: 12px;
+
+    border: 1px solid var(--cor-borda);
+    text-align: left;
+}
+
+.passeios-tabela th {
+    background-color: var(--cor-cabecalho);
+}
+
+.passeios-tabela tbody tr:hover {
+    background-color: var(--cor-hover);
+}
+
+.passeios-chamada {
+    margin-bottom: 30px;
+    padding: 35px;
+
+    border: 1px solid var(--cor-borda);
+    text-align: center;
+}
+
+.passeios-chamada h2 {
+    margin-bottom: 12px;
+}
+
+.passeios-chamada p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
